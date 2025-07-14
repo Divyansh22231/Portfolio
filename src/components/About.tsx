@@ -114,7 +114,7 @@ const About = () => {
                 </h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>
-                    I'm a passionate Full Stack Developer with over 5 years of experience creating 
+                    I'm a passionate Full Stack Developer with over 3+ years of experience creating 
                     digital solutions that bridge the gap between design and technology. My journey 
                     started with a curiosity about how websites work, and it has evolved into a 
                     deep expertise in modern web technologies.
