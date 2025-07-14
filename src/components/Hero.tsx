@@ -177,8 +177,8 @@ const Hero = () => {
 
             {/* Profile Image */}
             <motion.div
-              variants={itemVariants}
-              className="flex justify-center lg:justify-end"
+              // variants={itemVariants}
+              // className="flex justify-center lg:justify-end"
             >
               <div className="relative">
                 <motion.div
@@ -193,11 +193,11 @@ const Hero = () => {
                   }}
                   className="relative z-10"
                 >
-                  <img
+                  {/* <img
                     src={profileHeadshot}
                     alt="Kishan Singh - Full Stack Developer"
                     className="w-80 h-80 md:w-96 md:h-96 rounded-full object-cover border-4 border-white/20 shadow-strong"
-                  />
+                  /> */}
                 </motion.div>
                 
                 {/* Glowing Border Effect */}
