@@ -243,7 +243,7 @@ const Testimonials = () => {
             {[
               { number: '50+', label: 'Projects Completed' },
               { number: '25+', label: 'Happy Clients' },
-              { number: '5+', label: 'Years Experience' },
+              { number: '3+', label: 'Years Experience' },
               { number: '100%', label: 'Satisfaction Rate' }
             ].map((stat, index) => (
               <motion.div
