@@ -13,7 +13,7 @@ const Hero = () => {
   const texts = [
     'Full Stack Developer',
     'React Specialist',
-    'UI/UX Enthusiast',
+    // 'UI/UX Enthusiast',
     'Problem Solver'
   ];
 
@@ -177,21 +177,21 @@ const Hero = () => {
 
             {/* Profile Image */}
             <motion.div
-              // variants={itemVariants}
-              // className="flex justify-center lg:justify-end"
+              variants={itemVariants}
+              className="flex justify-center lg:justify-end"
             >
               <div className="relative">
                 <motion.div
-                  animate={{ 
-                    scale: [1, 1.05, 1],
-                    rotate: [0, 2, -2, 0]
-                  }}
-                  transition={{
-                    duration: 6,
-                    repeat: Infinity,
-                    ease: "easeInOut"
-                  }}
-                  className="relative z-10"
+                  // animate={{ 
+                  //   scale: [1, 1.05, 1],
+                  //   rotate: [0, 2, -2, 0]
+                  // }}
+                  // transition={{
+                  //   duration: 6,
+                  //   repeat: Infinity,
+                  //   ease: "easeInOut"
+                  // }}
+                  // className="relative z-10"
                 >
                   {/* <img
                     src={profileHeadshot}
