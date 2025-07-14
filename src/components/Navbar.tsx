@@ -55,7 +55,7 @@ const Navbar = () => {
   const downloadResume = () => {
     // Create a dummy PDF download - in real implementation, link to actual resume
     const link = document.createElement('a');
-    link.href = '#';
+    link.href = 'https://pdf.ac/19Bh9D';
     link.download = 'resume.pdf';
     link.click();
   };
