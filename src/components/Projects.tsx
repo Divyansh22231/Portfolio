@@ -23,7 +23,7 @@ const Projects = () => {
       featured: true
     },
     {
-       
+       id:2,
        title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
       image: '/public/lovable-uploads/td.jpeg',
@@ -35,7 +35,7 @@ const Projects = () => {
     },
     
     {
-      id: 2,
+      id: 3,
       title: 'Task Management SaaS',
       description: 'Collaborative project management tool with real-time updates, team collaboration, and analytics.',
       image: '/public/lovable-uploads/gd.jpeg',
@@ -47,7 +47,7 @@ const Projects = () => {
       featured: true
     },
     {
-      id: 3,
+      id: 4,
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media management with data visualization and scheduling features.',
       image: '/public/lovable-uploads/🚀 Master SEO for Online Business Success 📊.jpeg',
@@ -58,7 +58,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 4,
+      id: 5,
       title: 'Fitness Tracking App',
       description: 'Mobile app for fitness tracking with workout plans, progress monitoring, and social features.',
       image: '/public/lovable-uploads/EasyDigitalWorkout - Transform Your Home into Your Gym.jpeg',
@@ -69,7 +69,7 @@ const Projects = () => {
       featured: false
     },
     {
-      id: 5,
+      id: 6,
       title: 'Cryptocurrency Tracker',
       description: 'Real-time cryptocurrency tracking with portfolio management and price alerts.',
       image: '/public/lovable-uploads/Corellian Portfolio Tracker Crypto.jpeg',
