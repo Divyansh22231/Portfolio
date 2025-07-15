@@ -290,7 +290,7 @@ const Projects = () => {
             <Card className="border-border bg-gradient-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
-                  Want to See More?
+                  3+ to See More?
                 </h3>
                 <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                   Check out my GitHub profile for more projects, contributions, and experiments. 
