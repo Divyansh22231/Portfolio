@@ -313,12 +313,12 @@ const Contact = () => {
                     <Mail className="mr-2 h-4 w-4" />
                     Send Email
                   </Button>
-                  <Button
+                  {/* <Button
                     onClick={() => window.open('https://calendly.com/username', '_blank')}
                     className="bg-gradient-button hover:shadow-glow transition-all duration-300"
                   >
                     Schedule Call
-                  </Button>
+                  </Button> */}
                 </div>
               </CardContent>
             </Card>
