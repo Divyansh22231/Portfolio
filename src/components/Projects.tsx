@@ -12,20 +12,34 @@ const Projects = () => {
   const projects = [
     {
       id: 1,
-      title: 'E-Commerce Platform',
+      title: 'Ai-Quiz',
+      description: 'An interactive AI-powered quiz designed to test and enhance your knowledge of artificial intelligence concepts and applications.',
+ 
+      image: '/public/lovable-uploads/cd.png',
+      category: 'E-commerce',
+      technologies: ['React', 'Node.js',],
+      liveUrl: 'https://ai-quiz-lyart.vercel.app/',
+      githubUrl: 'https://github.com/kishan34-Mac/AI-Quiz',
+      featured: true
+    },
+    {
+       
+       title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/td.jpeg',
       category: 'E-commerce',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
       liveUrl: 'https://ecommerce-demo.com',
       githubUrl: 'https://github.com/username/ecommerce',
       featured: true
     },
+    
     {
       id: 2,
       title: 'Task Management SaaS',
       description: 'Collaborative project management tool with real-time updates, team collaboration, and analytics.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/gd.jpeg',
+      
       category: 'SaaS',
       technologies: ['React', 'TypeScript', 'GraphQL', 'PostgreSQL', 'Docker'],
       liveUrl: 'https://taskmanager-demo.com',
@@ -36,7 +50,7 @@ const Projects = () => {
       id: 3,
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media management with data visualization and scheduling features.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/🚀 Master SEO for Online Business Success 📊.jpeg',
       category: 'Web App',
       technologies: ['Vue.js', 'D3.js', 'Express.js', 'Redis', 'Chart.js'],
       liveUrl: 'https://social-dashboard.com',
@@ -47,7 +61,7 @@ const Projects = () => {
       id: 4,
       title: 'Fitness Tracking App',
       description: 'Mobile app for fitness tracking with workout plans, progress monitoring, and social features.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/EasyDigitalWorkout - Transform Your Home into Your Gym.jpeg',
       category: 'Mobile',
       technologies: ['React Native', 'Firebase', 'Redux', 'Node.js'],
       liveUrl: 'https://fitness-app.com',
@@ -58,24 +72,24 @@ const Projects = () => {
       id: 5,
       title: 'Cryptocurrency Tracker',
       description: 'Real-time cryptocurrency tracking with portfolio management and price alerts.',
-      image: '/placeholder.svg',
+      image: '/public/lovable-uploads/Corellian Portfolio Tracker Crypto.jpeg',
       category: 'Web App',
       technologies: ['React', 'Next.js', 'CoinGecko API', 'TailwindCSS'],
       liveUrl: 'https://crypto-tracker.com',
       githubUrl: 'https://github.com/username/crypto-tracker',
       featured: false
     },
-    {
-      id: 6,
-      title: 'Learning Management System',
-      description: 'Educational platform with course management, progress tracking, and interactive content.',
-      image: '/placeholder.svg',
-      category: 'SaaS',
-      technologies: ['React', 'Django', 'PostgreSQL', 'AWS S3', 'WebRTC'],
-      liveUrl: 'https://lms-demo.com',
-      githubUrl: 'https://github.com/username/lms',
-      featured: true
-    }
+    // {
+    //   id: 6,
+    //   title: 'Learning Management System',
+    //   description: 'Educational platform with course management, progress tracking, and interactive content.',
+    //   image: '/placeholder.svg',
+    //   category: 'SaaS',
+    //   technologies: ['React', 'Django', 'PostgreSQL', 'AWS S3', 'WebRTC'],
+    //   liveUrl: 'https://lms-demo.com',
+    //   githubUrl: 'https://github.com/username/lms',
+    //   featured: true
+    // }
   ];
 
   const filteredProjects = activeFilter === 'All' 
