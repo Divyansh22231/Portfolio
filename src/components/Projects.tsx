@@ -50,7 +50,7 @@ const Projects = () => {
       id: 4,
       title: 'Social Media Dashboard',
       description: 'Analytics dashboard for social media management with data visualization and scheduling features.',
-      image: '/public/🚀 Master SEO for Online Business Success 📊.jpeg',
+      image: '/public/placeholder1.svg',
       category: 'Web App',
       technologies: ['Vue.js', 'D3.js', 'Express.js', 'Redis', 'Chart.js'],
       liveUrl: 'https://social-dashboard.com',
