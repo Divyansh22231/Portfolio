@@ -200,22 +200,22 @@ const Hero = () => {
                   /> */}
                 </motion.div>
                 
-                {/* Glowing Border Effect */}
+                {/* Glowing Border Effect
                 <div className="absolute inset-0 rounded-full bg-gradient-to-r from-hero-secondary via-white to-hero-secondary p-1 animate-gradient-shift">
                   <div className="w-full h-full rounded-full bg-hero-primary" />
-                </div>
+                </div> */}
 
-                {/* Floating Elements */}
+                {/* Floating Elements
                 <motion.div
                   animate={{ rotate: 360 }}
                   transition={{ duration: 20, repeat: Infinity, ease: "linear" }}
                   className="absolute -top-10 -right-10 w-20 h-20 bg-hero-secondary/20 rounded-full border border-hero-secondary/30"
-                />
-                <motion.div
+                /> */}
+                {/* <motion.div
                   animate={{ rotate: -360 }}
                   transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                   className="absolute -bottom-8 -left-8 w-16 h-16 bg-white/10 rounded-full border border-white/20"
-                />
+                /> */}
               </div>
             </motion.div>
           </motion.div>
