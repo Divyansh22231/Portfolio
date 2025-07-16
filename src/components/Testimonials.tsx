@@ -10,10 +10,10 @@ const Testimonials = () => {
   const testimonials = [
     {
       id: 1,
-      name: 'Sarah Chen',
+      name: 'Anshumesh Saini',
       role: 'Product Manager',
       company: 'TechCorp Solutions',
-      avatar: '/placeholder.svg',
+      avatar: '/lovable-uploads/WhatsApp Image 2025-07-16 at 12.22.45.jpeg',
       rating: 5,
       content: 'Alex delivered exceptional work on our e-commerce platform. His attention to detail and ability to translate complex requirements into elegant solutions made our collaboration seamless. The final product exceeded our expectations!',
       project: 'E-commerce Platform Redesign'
