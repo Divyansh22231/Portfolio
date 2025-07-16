@@ -26,7 +26,7 @@ const Projects = () => {
        id:2,
        title: 'E-Commerce Platform',
       description: 'Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.',
-      image: '/public/lovable-uploads/td.jpeg',
+      image: '/lovable-uploads/td.jpeg',
       category: 'E-commerce',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
       liveUrl: 'https://ecommerce-demo.com',
