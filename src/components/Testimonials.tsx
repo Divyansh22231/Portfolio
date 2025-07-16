@@ -19,15 +19,16 @@ const Testimonials = () => {
       project: 'E-commerce Platform Redesign'
     },
     {
-      id: 2,
-      name: 'Divyansh',
-      role: 'Full-Stack Developer',
-      company: 'Tech Startup',
-      avatar: '/placeholder.svg',
-      rating: 5,
-      content: 'Working with Kishan was a game-changer for our startup. He built our MVP from the ground up with incredible efficiency and quality. His technical expertise and proactive communication made him feel like part of our core team.',
-      project: 'SaaS MVP Development'
-    },
+  id: 2,
+  name: 'Divyansh',
+  role: 'Full-Stack Developer',
+  company: 'Tech Startup',
+  avatar: '/placeholder.svg',
+  rating: 5,
+  content: 'Partnering with Kishan was a transformative experience for our startup. He architected and delivered our SaaS MVP with remarkable speed, precision, and polish. What truly set Kishan apart was his deep technical acumen, problem-solving mindset, and seamless collaboration — he didn’t just feel like a developer, he became an integral part of our founding team.',
+  project: 'SaaS MVP Development'
+},
+
     {
       id: 3,
       name: 'Anurag Maurya',
