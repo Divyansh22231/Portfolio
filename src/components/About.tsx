@@ -98,9 +98,9 @@ const About = () => {
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="relative">
                 <img
-  src={profileHeadshot}
+  src="/lovable-uploads/newwww.jpg"
   alt="About Kishan Singh"
-  className="w-80 h-89 mx-auto rounded-2xl shadow-medium object-cover border-2 border-white/10"
+  className="w-80 h-100 mx-auto rounded-2xl shadow-medium object-cover border-2 border-white/10"
 />
 
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent rounded-2xl" />

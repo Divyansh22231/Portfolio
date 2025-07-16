@@ -11,53 +11,53 @@ const Testimonials = () => {
     {
       id: 1,
       name: 'Anshumesh Saini',
-      role: 'Product Manager',
-      company: 'TechCorp Solutions',
+      role: 'Co-Founder',
+      company: 'Cybershield',
       avatar: '/lovable-uploads/WhatsApp Image 2025-07-16 at 12.22.45.jpeg',
       rating: 5,
-      content: 'Alex delivered exceptional work on our e-commerce platform. His attention to detail and ability to translate complex requirements into elegant solutions made our collaboration seamless. The final product exceeded our expectations!',
+      content: 'Kishan exceptional work on our e-commerce platform. His attention to detail and ability to translate complex requirements into elegant solutions made our collaboration seamless. The final product exceeded our expectations!',
       project: 'E-commerce Platform Redesign'
     },
     {
       id: 2,
-      name: 'Michael Rodriguez',
-      role: 'CTO',
-      company: 'StartupXYZ',
+      name: 'Divyansh',
+      role: 'Full-Stack Developer',
+      company: 'Tech Startup',
       avatar: '/placeholder.svg',
       rating: 5,
-      content: 'Working with Alex was a game-changer for our startup. He built our MVP from the ground up with incredible efficiency and quality. His technical expertise and proactive communication made him feel like part of our core team.',
+      content: 'Working with Kishan was a game-changer for our startup. He built our MVP from the ground up with incredible efficiency and quality. His technical expertise and proactive communication made him feel like part of our core team.',
       project: 'SaaS MVP Development'
     },
     {
       id: 3,
-      name: 'Emily Johnson',
-      role: 'Design Director',
-      company: 'Creative Agency',
-      avatar: '/placeholder.svg',
+      name: 'Anurag Maurya',
+      role: 'Senior Developer',
+      company: 'IT Sector',
+      avatar: '/lovable-uploads/WhatsApp Image 2025-07-16 at 13.01.45.jpeg',
       rating: 5,
-      content: 'Alex has an exceptional ability to bridge the gap between design and development. He implemented our complex UI designs pixel-perfectly while adding thoughtful improvements that enhanced the user experience. Truly professional work!',
+      content: 'Kishan has an exceptional ability to bridge the gap between design and development. He implemented our complex UI designs pixel-perfectly while adding thoughtful improvements that enhanced the user experience. Truly professional work!',
       project: 'Portfolio Website Development'
     },
     {
       id: 4,
-      name: 'David Kim',
-      role: 'Founder',
-      company: 'FitnessTech',
-      avatar: '/placeholder.svg',
+      name: 'Muskaan',
+      role: 'Front-end Developer',
+      company: '..',
+      avatar: '/lovable-uploads/WhatsApp Image 2025-07-16 at 13.01.17.jpeg',
       rating: 5,
-      content: 'The mobile app Alex developed for us has been a huge success. His expertise in React Native and attention to performance optimization resulted in an app that our users love. Highly recommend his services!',
-      project: 'Fitness Mobile App'
+      content: 'The mobile app Kishan developed for us has been a huge success. His expertise in React Native and attention to performance optimization resulted in an app that our users love. Highly recommend his services!',
+      project: 'Fitness Mobile '
     },
-    {
-      id: 5,
-      name: 'Lisa Wang',
-      role: 'Project Manager',
-      company: 'EdTech Solutions',
-      avatar: '/placeholder.svg',
-      rating: 5,
-      content: 'Alex delivered our learning management system on time and within budget. His ability to understand complex educational workflows and translate them into intuitive interfaces was impressive. Great collaboration throughout!',
-      project: 'Learning Management System'
-    }
+    // {
+    //   id: 5,
+    //   name: 'Lisa Wang',
+    //   role: 'Project Manager',
+    //   company: 'EdTech Solutions',
+    //   avatar: '/placeholder.svg',
+    //   rating: 5,
+    //   content: 'Alex delivered our learning management system on time and within budget. His ability to understand complex educational workflows and translate them into intuitive interfaces was impressive. Great collaboration throughout!',
+    //   project: 'Learning Management System'
+    // }
   ];
 
   const nextTestimonial = () => {
@@ -149,7 +149,7 @@ const Testimonials = () => {
                   }}
                 >
                   <Card className="border-border shadow-medium bg-gradient-card">
-                    <CardContent className="p-8 md:p-12">
+                    <CardContent className="p-8 md:p-5">
                       <div className="flex flex-col items-center text-center space-y-6">
                         {/* Quote Icon */}
                         <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center">
