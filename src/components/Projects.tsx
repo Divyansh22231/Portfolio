@@ -29,8 +29,7 @@ const Projects = () => {
       image: '/lovable-uploads/td.jpeg',
       category: 'E-commerce',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
-      liveUrl: 'https://nova-mart-lemon.vercel.app/'
-,
+      liveUrl: 'https://nova-mart-lemon.vercel.app/',
       githubUrl: 'https://github.com/kishan34-Mac/Nova-mart',
       featured: true
     },
