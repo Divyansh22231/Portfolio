@@ -75,8 +75,8 @@ category: 'Web App',
       image: '/lovable-uploads/Corellian Portfolio Tracker Crypto.jpeg',
       category: 'Web App',
       technologies: ['React', 'Next.js', 'CoinGecko API', 'TailwindCSS'],
-      liveUrl: 'https://crypto-tracker.com',
-      githubUrl: 'https://github.com/username/crypto-tracker',
+      liveUrl: 'https://crypto-new-kishan34-cpus-projects.vercel.app/',
+      githubUrl: 'https://github.com/kishan34-Mac/crypto-new',
       featured: false
     },
     // {

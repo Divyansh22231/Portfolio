@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { ChevronDown, Github, Linkedin, Mail } from 'lucide-react';
+import { Download } from 'lucide-react';
+
 import { Button } from '@/components/ui/button';
 import profileHeadshot from '/lovable-uploads/4bae0617-b760-425f-99ff-bbab45733cd7.png';
 
@@ -16,6 +18,7 @@ const Hero = () => {
     // 'UI/UX Enthusiast',
     'Problem Solver'
   ];
+
 
   useEffect(() => {
     const timeout = setTimeout(() => {

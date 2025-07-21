@@ -78,7 +78,7 @@ const Navbar = () => {
             className="font-bold text-xl bg-gradient-button bg-clip-text text-transparent cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            Portfolio
+            Kishan
           </motion.div>
 
           {/* Desktop Navigation */}
