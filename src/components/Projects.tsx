@@ -70,7 +70,7 @@ category: 'Web App',
     },
     {
       id: 6,
-      title: 'Cryptocurrency Tracker',
+      title: 'Cryptocurrency Tracke',
       description: 'Real-time cryptocurrency tracking with portfolio management and price alerts.',
       image: '/lovable-uploads/Corellian Portfolio Tracker Crypto.jpeg',
       category: 'Web App',
