@@ -31,7 +31,7 @@ const Projects = () => {
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
       liveUrl: 'nova-mart-lemon.vercel.app'
 ,
-      githubUrl: 'https://github.com/kishan34-Mac/Nova-mart',
+      githubUrl: 'https://github.com/kishan34-Mac/Nova-',
       featured: true
     },
     
