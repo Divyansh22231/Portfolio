@@ -53,8 +53,8 @@ description: 'Analytics dashboard for social media management with data visualiz
 image: '/lovable-uploads/placeholder1.jpeg',
 category: 'Web App',
       technologies: ['Vue.js', 'D3.js', 'Express.js', 'Redis', 'Chart.js'],
-      liveUrl: 'https://social-dashboard.com',
-      githubUrl: 'https://github.com/username/social-dashboard',
+      liveUrl: 'https://social-media-amber-seven.vercel.app/',
+      githubUrl: 'https://github.com/kishan34-Mac/Social-media-Dashboard',
       featured: false
     },
     {
