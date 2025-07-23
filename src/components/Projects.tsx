@@ -36,14 +36,14 @@ const Projects = () => {
     
     {
       id: 3,
-      title: 'Task Management SaaS',
+      title: 'AI Code-Review',
       description: 'Collaborative project management tool with real-time updates, team collaboration, and analytics.',
-      image: '/lovable-uploads/gd.jpeg',
+      image: '/lovable-uploads/a42e3ebb8c917c1b6a899abdbc0eedcb.jpg',
       
-      category: 'SaaS',
-      technologies: ['React', 'TypeScript', 'GraphQL', 'PostgreSQL', 'Docker'],
-      liveUrl: 'https://taskmanager-demo.com',
-      githubUrl: 'https://github.com/username/taskmanager',
+      category: 'AI',
+      technologies: ['React', 'TypeScript', 'Express', 'Node.js', ''],
+      liveUrl: 'https://ai-code-review-ashy.vercel.app/',
+      githubUrl: 'https://github.com/kishan34-Mac/AI-Code-Review-',
       featured: true
     },
     {
