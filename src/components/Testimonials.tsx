@@ -298,46 +298,244 @@
 
 // export default Testimonials;
 
-import React from 'react';
-import { motion } from 'framer-motion';
+// 
+
+// import React, { useState } from 'react';
+// import { motion, AnimatePresence } from 'framer-motion';
+// import { Card, CardContent } from '@/components/ui/card';
+// import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
+// import { Button } from '@/components/ui/button';
+// import { Quote, Star, ChevronRight, ChevronLeft } from 'lucide-react';
+
+// const testimonials = [
+//   {
+//     id: 1,
+//     name: "Anshumesh Saini",
+//     role: "Full-Stack Developer",
+//     company: "Cybershield",
+//     avatar: "/lovable-uploads/WhatsApp Image 2025-07-16 at 12.22.45.jpeg",
+//     rating: 5,
+//     content: "Exceptional work quality and attention to detail. Delivered exactly what we needed on time and exceeded our expectations."
+//   },
+//   {
+//     id: 2,
+//     name: "Anurag Maurya",
+//     role: "Self-Learning Developer",
+//     company: "",
+//     avatar: "/lovable-uploads/WhatsApp Image 2025-07-16 at 13.01.45.jpeg",
+//     rating: 5,
+//     content: "Outstanding technical skills and great communication. The project was completed flawlessly with innovative solutions."
+//   },
+//   {
+//     id: 3,
+//     name: "Muskaan",
+//     role: "Front-end Developer",
+//     company: "Unskill",
+//     avatar: "/lovable-uploads/WhatsApp Image 2025-07-25 at 09.31.55.jpeg",
+//     rating: 5,
+//     content: "Amazing collaboration and creative problem-solving. Transformed our vision into reality with beautiful, functional design."
+//   }
+// ];
+
+// const Testimonials = () => {
+//   const [currentIndex, setCurrentIndex] = useState(0);
+
+//   const nextTestimonial = () => {
+//     setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+//   };
+
+//   const previousTestimonial = () => {
+//     setCurrentIndex((prevIndex) => 
+//       prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+//     );
+//   };
+
+//   const currentTestimonial = testimonials[currentIndex];
+
+//   return (
+//     <section className="py-16 px-4 max-w-4xl mx-auto relative">
+//       <motion.div
+//         initial={{ opacity: 0, y: 20 }}
+//         whileInView={{ opacity: 1, y: 0 }}
+//         transition={{ duration: 0.6 }}
+//         viewport={{ once: true }}
+//         className="text-center mb-12"
+//       >
+//         <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
+//           What Clients Say
+//         </h2>
+//         <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
+//           Don't just take my word for it - hear from clients who've experienced exceptional results
+//         </p>
+//       </motion.div>
+
+//       {/* Single Testimonial Display */}
+//       <div className="relative min-h-[400px] flex items-center justify-center">
+//         <AnimatePresence mode="wait">
+//           <motion.div
+//             key={currentTestimonial.id}
+//             initial={{ opacity: 0, x: 50, scale: 0.9 }}
+//             animate={{ opacity: 1, x: 0, scale: 1 }}
+//             exit={{ opacity: 0, x: -50, scale: 0.9 }}
+//             transition={{ 
+//               duration: 0.5,
+//               ease: "easeInOut"
+//             }}
+//             className="w-full max-w-2xl"
+//           >
+//             <Card className="relative bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant group">
+//               {/* Quote Icon */}
+//               <div className="absolute -top-3 left-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
+//                 <Quote className="w-3 h-3 text-primary-foreground" />
+//               </div>
+              
+//               <CardContent className="p-8 pt-10">
+//                 {/* Rating Stars */}
+//                 <div className="flex gap-1 mb-6 justify-center">
+//                   {[...Array(currentTestimonial.rating)].map((_, i) => (
+//                     <motion.div
+//                       key={i}
+//                       initial={{ opacity: 0, scale: 0 }}
+//                       animate={{ opacity: 1, scale: 1 }}
+//                       transition={{ delay: 0.2 + (i * 0.1) }}
+//                     >
+//                       <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
+//                     </motion.div>
+//                   ))}
+//                 </div>
+
+//                 {/* Testimonial Content */}
+//                 <blockquote className="text-foreground mb-8 leading-relaxed text-lg text-center">
+//                   "{currentTestimonial.content}"
+//                 </blockquote>
+
+//                 {/* Author Info */}
+//                 <div className="flex items-center justify-center gap-4">
+//                   <Avatar className="w-12 h-12 ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+//                     <AvatarImage src={currentTestimonial.avatar} alt={currentTestimonial.name} />
+//                     <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold">
+//                       {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
+//                     </AvatarFallback>
+//                   </Avatar>
+//                   <div className="text-center">
+//                     <div className="font-semibold text-foreground">
+//                       {currentTestimonial.name}
+//                     </div>
+//                     <div className="text-muted-foreground text-sm">
+//                       {currentTestimonial.role}
+//                       {currentTestimonial.company && ` at ${currentTestimonial.company}`}
+//                     </div>
+//                   </div>
+//                 </div>
+//               </CardContent>
+
+//               {/* Hover Effect Overlay */}
+//               <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-lg pointer-events-none" />
+//             </Card>
+//           </motion.div>
+//         </AnimatePresence>
+//       </div>
+
+//       {/* Navigation Indicators */}
+//       <div className="flex justify-center gap-2 mb-8">
+//         {testimonials.map((_, index) => (
+//           <button
+//             key={index}
+//             onClick={() => setCurrentIndex(index)}
+//             className={`w-2 h-2 rounded-full transition-all duration-300 ${
+//               index === currentIndex 
+//                 ? 'bg-primary w-6' 
+//                 : 'bg-border hover:bg-primary/50'
+//             }`}
+//           />
+//         ))}
+//       </div>
+
+//       {/* Navigation Buttons */}
+//       <div className="flex justify-center gap-4">
+//         <Button
+//           onClick={previousTestimonial}
+//           variant="outline"
+//           className="group px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl border-primary/20 hover:border-primary hover:bg-primary hover:text-primary-foreground"
+//         >
+//           <ChevronLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
+//           <span>Previous</span>
+//         </Button>
+        
+//         <Button
+//           onClick={nextTestimonial}
+//           className="group bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+//         >
+//           <span className="mr-2">Next</span>
+//           <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+//         </Button>
+//       </div>
+
+//       {/* Decorative Elements */}
+//       <div className="absolute inset-0 overflow-hidden pointer-events-none">
+//         <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary/5 rounded-full blur-3xl" />
+//         <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-accent/5 rounded-full blur-3xl" />
+//       </div>
+//     </section>
+//   );
+// };
+
+// export default Testimonials;
+
+import React, { useState } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
 import { Card, CardContent } from '@/components/ui/card';
 import { Avatar, AvatarFallback, AvatarImage } from '@/components/ui/avatar';
-import { Quote, Star } from 'lucide-react';
+import { Button } from '@/components/ui/button';
+import { Quote, Star, ChevronRight, ChevronLeft } from 'lucide-react';
 
 const testimonials = [
   {
     id: 1,
     name: "Anshumesh Saini",
     role: "Full-Stack Developer",
-    company: "Cybershield",
+    // company: "Cybershield",
     avatar: "/lovable-uploads/WhatsApp Image 2025-07-16 at 12.22.45.jpeg",
     rating: 5,
-    content: "Exceptional work quality and attention to detail. Delivered exactly what we needed on time and exceeded our expectations. Kishan's ability to translate complex requirements into elegant solutions was impressive."
-
+    content: "Exceptional work quality and attention to detail. Delivered exactly what we needed on time and exceeded our expectations."
   },
   {
     id: 2,
     name: "Anurag Maurya",
     role: "Self-Learning Developer",
-    // company: "",
+    company: "",
     avatar: "/lovable-uploads/WhatsApp Image 2025-07-16 at 13.01.45.jpeg",
     rating: 5,
-    content: "Outstanding technical skills and great communication. The project was completed flawlessly with innovative solutions. Kishan's professionalism and expertise made the entire process smooth and enjoyable."
+    content: "Outstanding technical skills and great communication. The project was completed flawlessly with innovative solutions."
   },
   {
     id: 3,
     name: "Muskaan",
     role: "Front-end Developer",
-    company: "Unskill",
+    // company: "Unskill",
     avatar: "/lovable-uploads/WhatsApp Image 2025-07-25 at 09.31.55.jpeg",
     rating: 5,
-    content: "Amazing collaboration and creative problem-solving. Transformed our vision into reality with beautiful, functional design. Kishan's dedication to quality and user experience is truly commendable more."
+    content: "Amazing collaboration and creative problem-solving. Transformed our vision into reality with beautiful, functional design."
   }
 ];
 
 const Testimonials = () => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  const nextTestimonial = () => {
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
+  };
+
+  const previousTestimonial = () => {
+    setCurrentIndex((prevIndex) => 
+      prevIndex === 0 ? testimonials.length - 1 : prevIndex - 1
+    );
+  };
+
+  const currentTestimonial = testimonials[currentIndex];
+
   return (
-    <section className="py-16 px-4 max-w-6xl mx-auto">
+    <section className="py-16 px-4 max-w-4xl mx-auto relative">
       <motion.div
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -353,64 +551,69 @@ const Testimonials = () => {
         </p>
       </motion.div>
 
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {testimonials.map((testimonial, index) => (
+      {/* Single Testimonial Display */}
+      <div className="relative min-h-[400px] flex items-center justify-center">
+        <AnimatePresence mode="wait">
           <motion.div
-            key={testimonial.id}
-            initial={{ opacity: 0, y: 30, scale: 0.9 }}
-            whileInView={{ opacity: 1, y: 0, scale: 1 }}
+            key={currentTestimonial.id}
+            initial={{ opacity: 0, x: 50, scale: 0.9 }}
+            animate={{ opacity: 1, x: 0, scale: 1 }}
+            exit={{ opacity: 0, x: -50, scale: 0.9 }}
             transition={{ 
-              duration: 0.5, 
-              delay: index * 0.1,
-              ease: "easeOut"
+              duration: 0.5,
+              ease: "easeInOut"
             }}
-            whileHover={{ 
-              y: -8,
-              transition: { duration: 0.2 }
-            }}
-            viewport={{ once: true }}
+            className="w-full max-w-2xl"
           >
-            <Card className="relative h-full bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant group">
+            <Card className="relative bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant group">
               {/* Quote Icon */}
               <div className="absolute -top-3 left-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                 <Quote className="w-3 h-3 text-primary-foreground" />
               </div>
               
-              <CardContent className="p-6 pt-8">
+              <CardContent className="p-8 pt-10">
                 {/* Rating Stars */}
-                <div className="flex gap-1 mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
+                <div className="flex gap-1 mb-6 justify-center">
+                  {[...Array(currentTestimonial.rating)].map((_, i) => (
                     <motion.div
                       key={i}
                       initial={{ opacity: 0, scale: 0 }}
-                      whileInView={{ opacity: 1, scale: 1 }}
-                      transition={{ delay: 0.3 + (i * 0.1) }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ delay: 0.2 + (i * 0.1) }}
                     >
-                      <Star className="w-4 h-4 fill-yellow-400 text-yellow-400" />
+                      <Star className="w-5 h-5 fill-yellow-400 text-yellow-400" />
                     </motion.div>
                   ))}
                 </div>
 
                 {/* Testimonial Content */}
-                <blockquote className="text-foreground mb-6 leading-relaxed">
-                  "{testimonial.content}"
+                <blockquote className="text-foreground mb-8 leading-relaxed text-lg text-center">
+                  "{currentTestimonial.content}"
                 </blockquote>
 
                 {/* Author Info */}
-                <div className="flex items-center gap-3">
-                  <Avatar className="w-10 h-10 ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
-                    <AvatarImage src={testimonial.avatar} alt={testimonial.name} />
-                    <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold">
-                      {testimonial.name.split(' ').map(n => n[0]).join('')}
-                    </AvatarFallback>
-                  </Avatar>
-                  <div>
-                    <div className="font-semibold text-foreground text-sm">
-                      {testimonial.name}
+                <div className="flex items-center justify-center gap-6 p-6 rounded-2xl bg-gradient-to-r from-primary/5 via-accent/5 to-primary/5 border border-primary/10 group-hover:border-primary/20 transition-all duration-300">
+                  <div className="relative">
+                    <Avatar className="w-16 h-16 ring-4 ring-primary/20 group-hover:ring-primary/40 transition-all duration-300 shadow-lg">
+                      <AvatarImage src={currentTestimonial.avatar} alt={currentTestimonial.name} className="object-cover" />
+                      <AvatarFallback className="bg-gradient-primary text-primary-foreground font-bold text-lg">
+                        {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
+                      </AvatarFallback>
+                    </Avatar>
+                    <div className="absolute -bottom-1 -right-1 w-5 h-5 bg-green-500 rounded-full border-2 border-card shadow-sm" />
+                  </div>
+                  <div className="text-center flex-1">
+                    <div className="font-bold text-foreground text-xl mb-1 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+                      {currentTestimonial.name}
                     </div>
-                    <div className="text-muted-foreground text-xs">
-                      {testimonial.role} at {testimonial.company}
+                    <div className="text-muted-foreground font-medium">
+                      {currentTestimonial.role}
                     </div>
+                    {currentTestimonial.company && (
+                      <div className="text-primary/70 text-sm font-semibold mt-1">
+                        @ {currentTestimonial.company}
+                      </div>
+                    )}
                   </div>
                 </div>
               </CardContent>
@@ -419,7 +622,42 @@ const Testimonials = () => {
               <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-lg pointer-events-none" />
             </Card>
           </motion.div>
+        </AnimatePresence>
+      </div>
+
+      {/* Navigation Indicators */}
+      <div className="flex justify-center gap-2 mb-8">
+        {testimonials.map((_, index) => (
+          <button
+            key={index}
+            onClick={() => setCurrentIndex(index)}
+            className={`w-2 h-2 rounded-full transition-all duration-300 ${
+              index === currentIndex 
+                ? 'bg-primary w-6' 
+                : 'bg-border hover:bg-primary/50'
+            }`}
+          />
         ))}
+      </div>
+
+      {/* Navigation Buttons */}
+      <div className="flex justify-center gap-4">
+        <Button
+          onClick={previousTestimonial}
+          variant="outline"
+          className="group px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl border-primary/20 hover:border-primary hover:bg-primary hover:text-primary-foreground"
+        >
+          <ChevronLeft className="w-4 h-4 mr-2 transition-transform group-hover:-translate-x-1" />
+          <span>Previous</span>
+        </Button>
+        
+        <Button
+          onClick={nextTestimonial}
+          className="group bg-primary hover:bg-primary/90 text-primary-foreground px-6 py-3 rounded-full transition-all duration-300 shadow-lg hover:shadow-xl"
+        >
+          <span className="mr-2">Next</span>
+          <ChevronRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+        </Button>
       </div>
 
       {/* Decorative Elements */}
