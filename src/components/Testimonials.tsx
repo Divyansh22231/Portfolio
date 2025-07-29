@@ -355,8 +355,8 @@ const Testimonials = () => {
   return (
     <section className="py-16 px-4 max-w-4xl mx-auto relative">
       <motion.div
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 20, y: 20 }}
+        whileInView={{ opacity: 6, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
         className="text-center mb-12"
@@ -383,7 +383,7 @@ const Testimonials = () => {
             }}
             className="w-full max-w-2xl"
           >
-            <Card className="relative bg-card/50 backdrop-blur-sm border border-border/50 hover:border-primary/30 transition-all duration-300 hover:shadow-elegant group">
+            <Card className="relative bg-card/50 backdrop-blur-sm border-4 border-primary hover:border-primary transition-all duration-300 hover:shadow-elegant group ring-4 ring-primary/30 hover:ring-primary/50 shadow-[0_0_30px_rgba(59,130,246,0.3)]">
               {/* Quote Icon */}
               <div className="absolute -top-3 left-6 w-6 h-6 bg-primary rounded-full flex items-center justify-center">
                 <Quote className="w-3 h-3 text-primary-foreground" />
@@ -411,7 +411,7 @@ const Testimonials = () => {
 
                 {/* Author Info */}
                 <div className="flex items-center justify-center gap-4">
-                  <Avatar className="w-12 h-12 ring-2 ring-primary/20 group-hover:ring-primary/40 transition-all">
+                  <Avatar className="w-12 h-12 ring-2 ring-primary/20 group-hover:ring-primary/90 transition-all">
                     <AvatarImage src={currentTestimonial.avatar} alt={currentTestimonial.name} />
                     <AvatarFallback className="bg-gradient-primary text-primary-foreground font-semibold">
                       {currentTestimonial.name.split(' ').map(n => n[0]).join('')}
@@ -430,7 +430,7 @@ const Testimonials = () => {
               </CardContent>
 
               {/* Hover Effect Overlay */}
-              <div className="absolute inset-0 bg-gradient-primary opacity-0 group-hover:opacity-5 transition-opacity duration-300 rounded-lg pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-primary opacity-9 group-hover:opacity-9 transition-opacity duration-3000 rounded-lg pointer-events-none" />
             </Card>
           </motion.div>
         </AnimatePresence>
@@ -481,7 +481,6 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
 // import React, { useState } from 'react';
 // import { motion, AnimatePresence } from 'framer-motion';
 // import { Card, CardContent } from '@/components/ui/card';
