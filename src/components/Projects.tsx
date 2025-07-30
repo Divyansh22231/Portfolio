@@ -7,7 +7,7 @@ import { Button } from '@/components/ui/button';
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('All');
 
-  const filters = ['All', 'Web App', 'Mobile', 'E-commerce', 'SaaS'];
+  const filters = ['All', 'Web App', 'Mobile', 'E-commerce', 'AI/ML'];
 
   const projects = [
     {
@@ -16,7 +16,7 @@ const Projects = () => {
       description: 'An interactive AI-powered quiz designed to test and enhance your knowledge of artificial intelligence concepts and applications.',
  
       image: '/lovable-uploads/cd.png',
-      category: 'E-commerce',
+      category: 'AI/ML',
       technologies: ['React', 'Node.js',],
       liveUrl: 'https://ai-quiz-lyart.vercel.app/',
       githubUrl: 'https://github.com/kishan34-Mac/AI-Quiz',
@@ -40,7 +40,7 @@ const Projects = () => {
       description: 'Collaborative project management tool with real-time updates, team collaboration, and analytics.',
       image: '/lovable-uploads/a42e3ebb8c917c1b6a899abdbc0eedcb.jpg',
       
-      category: 'AI',
+      category: 'AI/ML',
       technologies: ['React', 'TypeScript', 'Express', 'Node.js', ''],
       liveUrl: 'https://ai-code-review-ashy.vercel.app/',
       githubUrl: 'https://github.com/kishan34-Mac/AI-Code-Review-',
