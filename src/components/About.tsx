@@ -24,6 +24,15 @@ const About = () => {
     { name: 'Redis', category: 'Cache' },
     { name: 'HTML/CSS', category: 'Frontend' },
     { name: 'JavaScript', category: 'Backend' },
+    { name: 'Bun', category: 'Backend' },
+    { name: 'Firebase', category: 'Backend' },
+    { name: 'Vite', category: 'Frontend' },
+    { name: 'Git', category: 'Version Control'},
+    { name: 'Redux', category: 'Frontend' },
+    { name: 'SQLite', category: 'Database' },
+
+
+    
   ];
 
   const values = [
