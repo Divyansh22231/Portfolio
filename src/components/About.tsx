@@ -183,11 +183,25 @@ const About = () => {
           </div>
 
           {/* Tech Stack */}
-          <motion.div variants={itemVariants} className="mb-20">
-            <h3 className="text-2xl font-semibold text-foreground text-center mb-8">
-              Technologies I Work With
-            </h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4">
+          <motion.div variants={itemVariants} className="mb-16">
+   <div className="text-center mb-16">
+  <div className="inline-block relative">
+    <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
+      Frameworks & Tools
+    </h2>
+    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full"></div>
+  </div>
+  <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mt-6 leading-relaxed">
+    A refined stack built over{" "}
+    <span className="font-semibold text-blue-600 dark:text-blue-400">
+      3+ years
+    </span>{" "}
+    of hands-on development.
+  </p>
+</div>
+
+
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
               {techStack.map((tech, index) => (
                 <motion.div
                   key={tech.name}
@@ -219,14 +233,13 @@ const About = () => {
 
           {/* Values */}
           <motion.div variants={itemVariants}>
-            <h3 className="group text-center text-2xl md:text-6xl font-extrabold tracking-tight mb-14 
-               text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 via-teal-500 to-indigo-500 
-               dark:from-cyan-300 dark:via-teal-400 dark:to-indigo-400 
-               transition-all duration-500 hover:from-teal-400 hover:via-cyan-500 hover:to-blue-500 
-               dark:hover:from-teal-300 dark:hover:via-cyan-400 dark:hover:to-blue-400 
-               drop-shadow-md">
-  What Drives Me
-</h3>
+            <div className="text-center mb-16">
+              <div className="inline-block relative">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-400">
+                  What Drive Me{" "}
+                </h2>
+              </div>
+            </div>
 
             <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
               {values.map((value, index) => (
