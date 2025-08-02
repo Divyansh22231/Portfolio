@@ -184,24 +184,23 @@ const About = () => {
 
           {/* Tech Stack */}
           <motion.div variants={itemVariants} className="mb-16">
-   <div className="text-center mb-16">
-  <div className="inline-block relative">
-    <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
-      Frameworks & Tools
-    </h2>
-    <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full"></div>
-  </div>
-  <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mt-6 leading-relaxed">
-    A refined stack built over{" "}
-    <span className="font-semibold text-blue-600 dark:text-blue-400">
-      3+ years
-    </span>{" "}
-    of hands-on development.
-  </p>
-</div>
+            <div className="text-center mb-16">
+              <div className="inline-block relative">
+                <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black dark:text-white">
+                  Frameworks & Tools
+                </h2>
+                <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-blue-500 to-teal-400 rounded-full"></div>
+              </div>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto mt-6 leading-relaxed">
+                A refined stack built over{" "}
+                <span className="font-semibold text-blue-600 dark:text-blue-400">
+                  3+ years
+                </span>{" "}
+                of hands-on development.
+              </p>
+            </div>
 
-
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
+            {/* <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-8">
               {techStack.map((tech, index) => (
                 <motion.div
                   key={tech.name}
@@ -218,10 +217,46 @@ const About = () => {
                           {tech.name.charAt(0)}
                         </span>
                       </div>
-                      <h4 className="font-medium text-foreground text-sm">
+                      <h2 className="font-medium text-foreground text-sm">
+                        {tech.name}
+                      </h2>
+                      <p className="text-xs text-muted-foreground mt-1">
+                        {tech.category}
+                      </p>
+                    </CardContent>
+                  </Card>
+                </motion.div>
+              ))}
+            </div> */}
+            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-8">
+              {techStack.map((tech, index) => (
+                <motion.div
+                  key={tech.name}
+                  initial={{ opacity: 0, scale: 0.95 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: index * 0.04 }}
+                  whileHover={{ scale: 1.05, y: -4 }}
+                  className="group"
+                >
+                  <Card className="rounded-2xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 shadow-[0_4px_20px_rgba(0,0,0,0.04)] dark:shadow-[0_4px_20px_rgba(0,0,0,0.2)] hover:shadow-[0_6px_30px_rgba(0,0,0,0.1)] dark:hover:shadow-[0_6px_30px_rgba(0,0,0,0.3)] transition-shadow duration-75 ease-out">
+                    <CardContent className="flex flex-col items-center justify-center py-8 px-4">
+                      {/* Logo Box */}
+                      <div
+                        className="w-16 h-16 mb-4 flex items-center justify-center rounded-xl 
+            bg-gradient-to-br from-blue-500 to-teal-400 
+            text-white text-2xl font-bold 
+            shadow-lg shadow-blue-200 dark:shadow-teal-900 transition-all duration-300"
+                      >
+                        {tech.name.charAt(0)}
+                      </div>
+
+                      {/* Tech Name */}
+                      <h4 className="font-semibold text-gray-800 dark:text-white text-sm tracking-wide">
                         {tech.name}
                       </h4>
-                      <p className="text-xs text-muted-foreground mt-1">
+
+                      {/* Tech Category */}
+                      <p className="text-xs text-gray-500 dark:text-gray-400 mt-1">
                         {tech.category}
                       </p>
                     </CardContent>
@@ -233,7 +268,7 @@ const About = () => {
 
           {/* Values */}
           <motion.div variants={itemVariants}>
-            <div className="text-center mb-16">
+            <div className="text-center mb-1">
               <div className="inline-block relative">
                 <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800 dark:text-white bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-teal-400">
                   What Drive Me{" "}
