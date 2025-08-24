@@ -62,10 +62,10 @@ const Footer = () => {
             >
               <div className="flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
                 <p className="text-white/60 text-sm flex items-center">
-                  Made with <Heart className="w-4 h-4 mx-1 text-red-400" /> by Kishan Singh
+                  Made with <Heart className="w-4 h-4 mx-1 text-red-400" /> by Divyansh Yadav
                 </p>
                 <p className="text-white/60 text-sm">
-                  © {new Date().getFullYear()} Kishan Singh. All rights reserved.
+                  © {new Date().getFullYear()} Divyansh Yadav. All rights reserved.
                 </p>
               </div>
             </motion.div>
@@ -90,4 +90,4 @@ const Footer = () => {
 };
 
 export default Footer;
-
+ 

@@ -113,7 +113,7 @@ const Hero = () => {
                   Hello, I'm
                 </p>
                 <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-                  Kishan <span className="bg-gradient-to-r from-hero-secondary to-white bg-clip-text text-transparent">Singh</span>
+                  Divyansh <span className="bg-gradient-to-r from-hero-secondary to-white bg-clip-text text-transparent">Yadav</span>
                 </h1>
               </motion.div>
 
@@ -148,7 +148,7 @@ const Hero = () => {
                   onClick={() => scrollToSection('contact')}
                   variant="outline"
                   size="lg"
-                  className="border-white/30 text-white hover:bg-white/10 hover:border-white/50 transition-all duration-300 px-8"
+                  className="bg-hero-secondary text-hero-primary hover:bg-hero-secondary/90 hover:shadow-glow transition-all duration-300 font-semibold px-8"
                 >
                   Let's Talk
                 </Button>
@@ -159,9 +159,9 @@ const Hero = () => {
                 className="flex items-center gap-6 justify-center lg:justify-start"
               >
                 {[
-                  { icon: Github, href: 'https://github.com/kishan34-Mac', label: 'GitHub' },
+                  { icon: Github, href: 'https://github.com/Divyansh22231', label: 'GitHub' },
                   { icon: Linkedin, href: 'https://www.linkedin.com/in/kishan-singh-a28364215/', label: 'LinkedIn' },
-                  { icon: Mail, href: 'mailto:jsmith80769@gmail.com', label: 'Email' }
+                  { icon: Mail, href: 'mailto:divyanshyadav4568@gmail.com', label: 'Email' }
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
                     key={label}
@@ -219,6 +219,7 @@ const Hero = () => {
                   transition={{ duration: 15, repeat: Infinity, ease: "linear" }}
                   className="absolute -bottom-8 -left-8 w-16 h-16 bg-white/10 rounded-full border border-white/20"
                 /> */}
+                
               </div>
             </motion.div>
           </motion.div>

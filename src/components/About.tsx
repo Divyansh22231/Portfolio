@@ -112,8 +112,8 @@ const About = () => {
             <motion.div variants={itemVariants} className="space-y-6">
               <div className="relative">
                 <img
-                  src="/lovable-uploads/newwww.jpg"
-                  alt="About Kishan Singh"
+                  src="/lovable-uploads/new.png"
+                  alt="About Divyansh yadav"
                   className="w-80 h-100 mx-auto rounded-2xl shadow-medium object-cover border-2 border-white/10"
                 />
 
@@ -125,7 +125,7 @@ const About = () => {
             <motion.div variants={itemVariants} className="space-y-8">
               <div className="space-y-4">
                 <h3 className="text-2xl font-semibold text-foreground">
-                  Hi there! I'm Kishan Singh
+                  Hi there! I'm Divyansh Yadav
                 </h3>
                 <div className="space-y-4 text-muted-foreground leading-relaxed">
                   <p>

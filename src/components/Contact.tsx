@@ -21,19 +21,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: 'Email',
-      value: 'jsmith80769@gmail.com',
-      href: 'mailto:jsmith80769@gmail.com'
+      value: 'divyanshyadav4568@gmail.com',
+      href: 'mailto:divyanshyadav4568@gmail.com'
     },
     {
       icon: Phone,
       label: 'Phone',
-      value: '+91 9696255795',
-      href: 'tel:+919696255795'
+      value: '+91 9555805060',
+      href: 'tel:+919555805060'
     },
     {
       icon: MapPin,
       label: 'Location',
-      value: 'New Delhi, India',
+      value: 'Ahmedabad, India',
       href: 'https://maps.google.com'
     }
   ];
@@ -42,13 +42,13 @@ const Contact = () => {
     {
       icon: Github,
       label: 'GitHub',
-      href: 'https://github.com/kishan34-Mac',
+      href: 'https://github.com/Divyansh22231',
       color: 'hover:text-gray-900 dark:hover:text-white'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: 'https://www.linkedin.com/in/kishan-singh-a28364215/',
+      href: '',
       color: 'hover:text-blue-600'
     },
     {

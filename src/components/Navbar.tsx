@@ -55,8 +55,8 @@ const Navbar = () => {
   const downloadResume = () => {
     // Create a dummy PDF download - in real implementation, link to actual resume
     const link = document.createElement('a');
-    link.href = 'https://pdf.ac/19D';
-    link.download = 'resume.pdf';
+    link.href = '';
+    link.download = '';
     link.click();
   };
 
@@ -78,7 +78,7 @@ const Navbar = () => {
             className="font-bold text-xl bg-gradient-button bg-clip-text text-transparent cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            Kishan
+            Divyansh
           </motion.div>
 
           {/* Desktop Navigation */}

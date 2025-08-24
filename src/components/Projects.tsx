@@ -19,7 +19,7 @@ const Projects = () => {
       category: 'AI/ML',
       technologies: ['React', 'Node.js',],
       liveUrl: 'https://ai-quiz-lyart.vercel.app/',
-      githubUrl: 'https://github.com/kishan34-Mac/AI-Quiz',
+      githubUrl: '',
       featured: true
     },
     {
@@ -30,7 +30,7 @@ const Projects = () => {
       category: 'E-commerce',
       technologies: ['React', 'Node.js', 'MongoDB', 'Stripe', 'AWS'],
       liveUrl: 'https://nova-mart-lemon.vercel.app/',
-      githubUrl: 'https://github.com/kishan34-Mac/Nova-mart',
+      githubUrl: '',
       featured: true
     },
     
@@ -43,7 +43,7 @@ const Projects = () => {
       category: 'AI/ML',
       technologies: ['React', 'TypeScript', 'Express', 'Node.js', ''],
       liveUrl: 'https://ai-code-review-ashy.vercel.app/',
-      githubUrl: 'https://github.com/kishan34-Mac/AI-Code-Review-',
+      githubUrl: '',
       featured: true
     },
     {
@@ -54,7 +54,7 @@ image: '/lovable-uploads/placeholder1.jpeg',
 category: 'Web App',
       technologies: ['Vue.js', 'D3.js', 'Express.js', 'Redis', 'Chart.js'],
       liveUrl: 'https://social-media-amber-seven.vercel.app/',
-      githubUrl: 'https://github.com/kishan34-Mac/Social-media-Dashboard',
+      githubUrl: '',
       featured: false
     },
     {
@@ -65,7 +65,7 @@ category: 'Web App',
       category: 'Mobile',
       technologies: ['React Native', 'Firebase', 'Redux', 'Node.js'],
       liveUrl: 'https://fitness-app.com',
-      githubUrl: 'https://github.com/username/fitness-app',
+      githubUrl: '',
       featured: false
     },
     {
@@ -76,7 +76,7 @@ category: 'Web App',
       category: 'Web App',
       technologies: ['React', 'Next.js', 'CoinGecko API', 'TailwindCSS'],
       liveUrl: 'https://crypto-new-lovat.vercel.app',
-      githubUrl: 'https://github.com/kishan34-Mac/crypto-new',
+      githubUrl: '',
       featured: false
     },
     // {
@@ -299,8 +299,7 @@ category: 'Web App',
           {/* More Projects CTA */}
           <motion.div
             variants={itemVariants}
-            className="text-center mt-16"
-          >
+            className="text-center mt-16">
             <Card className="border-border bg-gradient-card">
               <CardContent className="p-8">
                 <h3 className="text-2xl font-semibold text-foreground mb-4">
