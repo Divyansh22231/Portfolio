@@ -160,7 +160,7 @@ const Hero = () => {
               >
                 {[
                   { icon: Github, href: 'https://github.com/Divyansh22231', label: 'GitHub' },
-                  { icon: Linkedin, href: 'https://www.linkedin.com/in/kishan-singh-a28364215/', label: 'LinkedIn' },
+                  { icon: Linkedin, href: '', label: 'LinkedIn' },
                   { icon: Mail, href: 'mailto:divyanshyadav4568@gmail.com', label: 'Email' }
                 ].map(({ icon: Icon, href, label }) => (
                   <motion.a
